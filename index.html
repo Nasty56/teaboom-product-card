@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ананасовый улун — Teaboom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="page">
+    <article class="card" data-pack="100">
+
+        <div class="card-img">
+            <img src="images/ananasovij-ulun.jpg" alt="Ананасовый улун — рассыпной чай" class="main-img" width="600" height="600">
+        </div>
+
+        <div class="card-info">
+
+            <a href="#" class="category">Улуны</a>
+
+            <h1 class="title">Ананасовый улун</h1>
+
+            <p class="sku">Артикул: <span id="sku">01306</span></p>
+
+            <fieldset class="packing">
+                <legend class="packing-title">Фасовка</legend>
+
+                <div class="packing-list">
+                    <label class="pack-item">
+                        <input type="radio" name="packing" value="100" data-sku="01306"
+                               data-price="326.40" data-old-price="349.20" checked>
+                        <span class="pack-label">100 г</span>
+                    </label>
+
+                    <label class="pack-item">
+                        <input type="radio" name="packing" value="500" data-sku="01307"
+                               data-price="1432" data-old-price="1646">
+                        <span class="pack-label">500 г</span>
+                    </label>
+
+                    <label class="pack-item">
+                        <input type="radio" name="packing" value="1000" data-sku="01308"
+                               data-price="2064" data-old-price="2592">
+                        <span class="pack-label">1000 г</span>
+                    </label>
+
+                    <label class="pack-item">
+                        <input type="radio" name="packing" value="5000" data-sku="01309"
+                               data-price="6320" data-old-price="8710">
+                        <span class="pack-label">5000 г</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="prices">
+                <span class="price" id="price">326,40 ₽</span>
+                <span class="old-price" id="old-price">349,20 ₽</span>
+            </div>
+
+            <div class="actions">
+                <button type="button" class="btn-buy" id="btn-add">
+                    В корзину
+                </button>
+
+                <div class="counter" hidden id="counter">
+                    <button type="button" class="btn-minus" id="btn-minus" aria-label="Уменьшить количество">−</button>
+                    <span class="count" id="count">1</span>
+                    <button type="button" class="btn-plus" id="btn-plus" aria-label="Увеличить количество">+</button>
+                </div>
+            </div>
+
+            <div class="descr">
+                <h2 class="descr-title">Описание</h2>
+                <p>
+                    Ананасовый улун — ароматный китайский чай с ярким тропическим вкусом.
+                    Крупнолистовой улун с кусочками ананаса и натуральным ароматизатором.
+                    Заваривается несколько раз, раскрывая новые оттенки вкуса.
+                </p>
+            </div>
+
+        </div>
+    </article>
+</main>
+
+<div class="modal" id="modal" hidden>
+    <button type="button" class="modal-close" id="modal-close" aria-label="Закрыть">×</button>
+    <img class="modal-img" id="modal-img" src="images/ananasovij-ulun.jpg" alt="Ананасовый улун — увеличенное изображение">
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
